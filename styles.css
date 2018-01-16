@@ -1,10 +1,8 @@
-/*
-        JavaScript
-        Project 07_01.3: Order Form
-        Author:
-        Date:
+/*  JavaScript 6th Edition
+    Chapter 1
+    Hands-on Project 1-3
 
-        Filename: styles.css
+    Filename: styles.css
 */
 
 /* apply a natural box layout model to all elements */
@@ -24,8 +22,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
    margin: 0;
@@ -37,7 +35,7 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
    display: block;
 }
@@ -47,16 +45,7 @@ body {
    max-width: 960px;
    background: white;
    margin: 0 auto;
-   font-family: Arial, Helvetica, sans-serif;
-   -webkit-box-shadow: 10px 0px 10px rgba(50, 50, 50, 1),
-                       0px 10px 10px rgba(50, 50, 50, 1),
-                       -10px 0px 10px rgba(50, 50, 50, 1);
-   -moz-box-shadow:    10px 0px 10px rgba(50, 50, 50, 1),
-                       0px 10px 10px rgba(50, 50, 50, 1),
-                       -10px 0px 10px rgba(50, 50, 50, 1);
-   box-shadow:         10px 0px 10px rgba(50, 50, 50, 1),
-                       0px 10px 10px rgba(50, 50, 50, 1),
-                       -10px 0px 10px rgba(50, 50, 50, 1);
+   font-family: Arial, Helvetica, sans-serif; 
 }
 
 ol, ul {
@@ -65,21 +54,26 @@ ol, ul {
 
 /* page header */
 header {
-   background: #04819E;
+   background: #93AD78;
    width: 100%;
-   color: #FFFFFF;
+   color: black;
    font-size: 48px;
    text-align: center;
    line-height: 1.5em;
    border-bottom: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
 }
 
 /* main content */
 article {
    width: 960px;
    text-align: center;
-   background: #BF7730;
+   background: white;
    padding-bottom: 20px;
+   border-bottom: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
 }
 
 article h2 {
@@ -88,20 +82,75 @@ article h2 {
    padding: 10px;
 }
 
-article table {
-   margin: 0 auto;
-   border: 1px solid black;
-   border-collapse: collapse;
-   background: #FFB873;
-}
+/* form */
 
-article table th, article table td {
-   padding: 5px 10px;
-   border: 1px solid black;
-}
-
-article table th {
-   font-weight: bold;
-   text-align: center;
-   border-bottom: 3px solid black;
-}
+legend, #submitbutton input {
+  font-family: georgia, "times new roman", times, serif;
+  }
+fieldset {
+  margin-bottom: 10px;
+  position: relative;
+  padding: 2.5em 1em 0.5em 1em;
+  background: #93AD78;
+  text-align: left;
+  }
+fieldset fieldset {
+  padding-top: 5px;
+  border: 2px solid #082008;
+  }
+form {
+  background: #082008;
+  padding: 10px 5px 7px 5px;
+  margin: 0 auto;
+  width: 750px;
+  }
+input, textarea {
+  font-size: 1em;
+  }
+input:focus, textarea:focus {
+  background: #e3d5ba;
+  }
+legend span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.25em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  }
+textarea {
+  display: block;
+  }
+#checkin {
+  float: left;
+  width: 45%;
+  }
+#checkout {
+  float: right;
+  width: 45%;
+  }
+#contactinfo, #reserveinfo, #submitbutton {
+  border: none;
+  }
+#contactinfo label {
+  display: block;
+  position: relative;
+  margin: 12px 0;
+  }
+#contactinfo input {
+  position: absolute;
+  left: 100px;
+  }
+#nameinput, #emailinput {
+  width: 30em;
+  }
+#phoneinput {
+  width: 12em;
+  }
+#submitbutton {
+  border: none;
+  background: #93AD78;
+  padding: 0.5em 0;
+  margin-bottom: 0;
+  text-align: center;
+  }
